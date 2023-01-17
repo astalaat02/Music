@@ -1,0 +1,539 @@
+/* Start GLobal Rules */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins' , sans-serif;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+img{
+    height: 60px;
+    width: 60px;
+}
+/* End GLobal Rules */
+
+/* Start Container */
+.container{
+    display: flex;
+}
+.container img{
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+}
+/* End Container */
+
+/* Start Left Side */
+
+.container .left-side{
+    width: 20%;
+    background-color: #232348;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.container .left-side .text{
+    margin: 0px auto;
+}
+.container .left-side .text h2{
+    padding-left: 30px;
+    color: red;
+}
+.container .left-side .text p{
+    color: white;
+}
+.container .left-side ul li{
+    padding: 10px;
+    background-color: transparent;
+    margin-bottom: 15px;
+    border-radius: 26px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container .left-side ul li:hover,
+.container .left-side .links ul li.active{
+    background-color: rgb(253, 82, 82);
+    color: white;
+}
+.container .left-side ul li{
+    color: #fff;
+    padding-left: 15px;
+}
+.container .left-side ul li svg{
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+.container .left-side h2{
+    font-size: 25px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+.container .left-side .channels ul li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container .left-side .channels ul li{
+    color: #fff;
+    cursor: default;
+}
+.container .left-side .channels ul li img{
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: -15px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+.container .left-side .channels ul li:hover{
+    background-color: transparent;
+}
+.container .left-side .popular-h .content{
+    display: flex;
+    justify-content: center;
+}
+.container .left-side .popular-h span{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 26px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.container .left-side .popular-h span:hover{
+    background-color: rgb(253, 82, 82);
+}
+
+/* End Left Side */
+
+/* Start Right Side */
+
+.container .right-side{
+    width: 80%;
+    background-color: #131335;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+/* End Right Side */
+
+/* Start Header */
+
+.container .right-side .header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 80px;
+}
+.container .right-side .header .search{
+    position: relative;
+    padding-left: 30px;
+}
+.container .right-side .header .search input{
+    width: 700px;
+    height: 50px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.267);
+    padding-left: 35px;
+    color: white;
+}
+.container .right-side .header .search input::placeholder{
+    color: white;
+}
+.container .right-side .header .search svg{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    color: white;
+}
+.container .right-side .header .search svg:first-of-type{
+    left: 50px;
+}
+.container .right-side .header .search svg:last-of-type{
+    right: 8px;
+}
+.container .right-side .header .info{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+}
+.container .right-side .header .info img{
+    border-radius: 16px;
+    padding-right: 10px;
+    height: 50px;
+    width: 50px;
+}
+.container .right-side .header .info span{
+    padding: 10px;
+}
+.container .right-side .header .info svg{
+    font-size: 22px;
+}
+.container .right-side .header .info::before{
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 9px;
+    height: 9px;
+    left: 136px;
+    top: 14px;
+    border-radius: 50%;
+}
+/* End Header */
+
+/* Start Info */
+
+.container .contentt{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.container .contentt .text h2{
+    font-size: 35px;
+}
+.container .contentt .text p{
+    font-size: 18px;
+    line-height: 2;
+    margin-top: 15px;
+}
+/* End Info */
+
+/* Start Playlist */
+
+.container .contentt .playlist{
+    padding-right: 30px;
+}
+.container .contentt .playlist .text{
+    padding-bottom: 20px;
+}
+.container .contentt .playlist .text h2{
+    font-size: 25px;
+}
+.container .contentt .playlist .text p{ 
+    font-size: 18px;
+}
+.container .contentt .playlist ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.container .contentt .playlist ul li h5{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.container .contentt .playlist ul li h5 span{
+    font-size: 13px;
+    font-weight: normal;
+}
+.container .contentt .playlist ul li img{
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.container .contentt .playlist ul li div:first-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .contentt .playlist ul li div:last-of-type{
+    margin-left: 30px;
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.287);
+    padding: 5px;
+    border-radius: 6px;
+}
+/* End Playlist */
+
+/* Start Profile */
+
+.container .profile{
+    margin-top: -190px;
+    color: white;
+}
+.container .profile .text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container .profile .text img{
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.container .profile .text p{
+    color: #fff;
+}
+.container .profile .text p:last-of-type{
+    font-size: 14px;
+}
+.container .profile .icons{
+    padding-top: 10px;
+    color: #fff;
+}
+.container .profile .icons span{
+    border: 1px solid #fff;
+    padding: 7px;
+    border-radius: 26px;
+    margin-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.container .profile .icons span:hover{
+    background-color: rgb(253, 82, 82);
+}
+.container .profile .icons span:first-child svg{
+    color: red;
+}
+.container .profile .icons span:first-child:hover svg{
+    color: white;
+}
+/* End Profile */
+
+.container .music{
+    padding-top: 80px;
+}
+
+/* Start Discover */
+
+.container .music .discover,
+.container .music .trending{
+    color: white;
+    padding-right: 15px;
+}
+.container .music .trending{
+    padding-top: 50px;
+}
+.container .music .discover .head,
+.container .music .trending .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .music .discover .head .title,
+.container .music .trending .head .title{
+    display: flex;
+    align-items: center;
+}
+.container .music .discover .head .title h2,
+.container .music .trending .head .title h2{
+    margin-left: 10px;
+}
+.container .music .discover .icons a svg,
+.container .music .trending .icons a svg{
+    color: #fff;
+    cursor: pointer;
+}
+.container .music .discover ul,
+.container .music .trending ul{
+    padding-top: 30px;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.container .music .discover ul li,
+.container .music .trending ul li{
+    max-width: 165px;
+    margin-right: 10px;
+}
+.container .music .discover ul li .info,
+.container .music .trending ul li .info{
+    position: relative;
+}
+.container .music .discover ul li .info img,
+.container .music .trending ul li .info img{
+    width: 165px;
+    height: 165px;
+    cursor: pointer;
+}
+.container .music .discover ul li .info span,
+.container .music .trending ul li .info span{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-color: rgba(0, 0, 0, 0.513);
+    color: #fff;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 12px;
+    z-index: 2000;
+}
+.container .music .discover ul li .text,
+.container .music .trending ul li .text{
+    padding-top: 15px;
+    color: #fff;
+}
+.container .music .discover ul li .text h5,
+.container .music .trending ul li .text h5{
+    font-size: 14px;
+}
+.container .music .discover ul li .text p,
+.container .music .trending ul li .text p{
+    font-size: 12px;
+}
+
+/* End Discover */
+
+/* Start Control */
+
+.container .control-dn{
+    display: none;
+}
+.container .control{
+    padding: 120px 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+}
+
+.control #poster{
+    border-radius: 50%;
+}
+
+.container .control-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: -110px;
+}
+.container .control-btns span{
+    margin-right: 25px;
+}
+.container .control-btns svg{
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.container .control .bar-1 {
+    position: relative;
+    width: 43%;
+    height: 10px;
+    background: rgb(105, 105, 170,.1);
+    margin: 0px 15px 0px 10px;
+}
+.container .control .bar-1 .bar-2{
+   position: absolute;
+   background: white;
+   width: 0%;
+   height: 100%;
+   top: 0;
+   transition: 1s linear;
+   border-radius: 6px;
+}
+.container .control .bar-1 .dot{
+   position: absolute;
+   width: 5px;
+   height: 5px;
+   background: white;
+   border-radius: 50%;
+   left: 0%;
+   top: 1px;
+   transition: 1s linear;
+}
+.container .control .bar-1 .dot::before{
+   content: '';
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   border:1px solid white;
+   border-radius: 50%;
+   left: -6px;
+   top: -6px;
+}
+.container .control .bar-1 input{
+   position: absolute;
+   width: 100%;
+   top: -6px;
+   left: 0;
+   cursor: pointer;
+   z-index: 99999999;
+   transition: 3s linear;
+   opacity: 0;
+}
+
+/* End Control */
+
+/* Start Responsive */
+
+@media(max-width: 998px){
+    .container{
+        flex-direction: column;
+    }
+    .container .left-side{
+        width: 100%;
+    }
+    .container .right-side{
+        width: 100%;
+    }
+    .container .contentt{
+        flex-direction: column;
+    }
+    .container .contentt .text p{
+        margin: 10px 0px 35px 0px;
+    }
+    .container .right-side .header .search input{
+        width: fit-content;
+    }
+    .container .profile{
+        margin-top: 45px;
+    }
+    .container .playlist h2{
+        padding-bottom: 15px;
+    }
+    .container .playlist ul li{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .container .playlist ul li h5{
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+        margin-right: 25px;
+    }
+    .container .playlist ul li h5 span{
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .container .playlist ul li div:first-of-type{
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* End Responsive */
+
+
+
+
+
+
+
+
+
+
+
