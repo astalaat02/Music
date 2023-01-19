@@ -269,7 +269,7 @@ img{
 /* Start Profile */
 
 .container .profile{
-    margin-top: -190px;
+    margin-top: -110px;
     color: white;
 }
 .container .profile .text{
@@ -506,6 +506,14 @@ img{
         padding-bottom: 15px;
     }
 
+    .container .profile .text .infoo p:first-of-type{
+        font-size: 30px;
+    }
+    
+    .container .profile .text .infoo p:last-of-type{
+        font-size: 20px;
+    }
+
     .container .profile .icons span{
         padding: 10px;
     }
@@ -538,11 +546,11 @@ img{
     }
     
     .container .contentt .text h2{
-        font-size: 20px;
+        font-size: 25px;
     }
     
     .container .contentt .text p{
-        font-size: 14px;
+        font-size: 20px;
     }
     
     .container .contentt .playlist ul li h5{
@@ -550,7 +558,7 @@ img{
     }
     
     .container .contentt .playlist ul li h5 span{
-        font-size: 25px;
+        font-size: 21px;
     }
     
     .container .contentt .playlist ul li div:last-of-type{
