@@ -480,60 +480,108 @@ img{
 /* Start Responsive */
 
 @media(max-width: 998px){
-    .container{
-        flex-direction: column;
+    *{
+        font-size: 25px;
     }
-    .container .left-side{
-        width: 100%;
-    }
-    .container .right-side{
-        width: 100%;
-    }
+
+    .container,
     .container .contentt{
         flex-direction: column;
     }
+
+    .container .left-side,
+    .container .right-side{
+        width: 100%;
+    }
+
     .container .contentt .text p{
         margin: 10px 0px 35px 0px;
     }
-    .container .right-side .header .search input{
-        width: fit-content;
-    }
+
     .container .profile{
         margin-top: 45px;
     }
+
+    .container .profile .text{
+        padding-bottom: 15px;
+    }
+
+    .container .profile .icons span{
+        padding: 10px;
+    }
+
     .container .playlist h2{
         padding-bottom: 15px;
     }
+
     .container .playlist ul li{
         display: flex;
         align-items: center;
         margin-bottom: 20px;
     }
+
     .container .playlist ul li h5{
         display: flex;
         flex-direction: column;
         margin-left: 12px;
         margin-right: 25px;
     }
+
     .container .playlist ul li h5 span{
         font-weight: normal;
         font-size: 13px;
     }
+
     .container .playlist ul li div:first-of-type{
         display: flex;
         align-items: center;
     }
+    
+    .container .contentt .text h2{
+        font-size: 20px;
+    }
+    
+    .container .contentt .text p{
+        font-size: 14px;
+    }
+    
+    .container .contentt .playlist ul li h5{
+        font-size: 25px;
+    }
+    
+    .container .contentt .playlist ul li h5 span{
+        font-size: 25px;
+    }
+    
+    .container .contentt .playlist ul li div:last-of-type{
+        font-size: 25px;
+    }
+    
+    .container .contentt .playlist{
+        padding-right: 0px;
+    }
+    
+    .container .left-side .text h2 {
+        padding-left: 55px;
+    }
+    
+    .container .right-side .header .search input{
+        font-size: 13px;
+        width: 300%;
+    }
+    
+    .container .right-side .header .search svg:last-of-type{
+        right: -400px;
+    }
+    
+    .container .right-side .header .info::before{
+        top: 18px;
+        left: 160px;
+    }
+
+    .container .control{
+        padding-bottom: 120px;
+    }
 }
 
 /* End Responsive */
-
-
-
-
-
-
-
-
-
-
-
